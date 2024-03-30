@@ -1,4 +1,42 @@
-                    GNU AFFERO GENERAL PUBLIC LICENSE
+Title: `The video returned by YouTube isn't the requested one. (Android client) (VideoNotAvailableException)`
+Date: `2024-03-30T16:43:08Z`
+Route: `/watch?v=rHlXh5cgVI0`
+Version: `2024.03.10-660d5e37 @ master`
+
+<details>
+<summary>Backtrace</summary>
+<p>
+   
+```
+The video returned by YouTube isn't the requested one. (Android client) (VideoNotAvailableException)
+  from /usr/share/crystal/src/json/any.cr:103:7 in 'try_fetch_streaming_data'
+  from src/invidious/videos/parser.cr:112:10 in 'extract_video_info:video_id'
+  from src/invidious/videos.cr:391:10 in 'fetch_video'
+  from src/invidious/videos.cr:379:13 in 'get_video:region'
+  from src/invidious/routes/watch.cr:55:15 in 'handle'
+  from lib/kemal/src/kemal/route.cr:13:9 in '->'
+  from src/invidious/helpers/handlers.cr:30:37 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call_next'
+  from lib/kemal/src/kemal/filter_handler.cr:21:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call_next'
+  from src/invidious/helpers/handlers.cr:94:12 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call_next'
+  from src/ext/kemal_static_file_handler.cr:106:36 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/handler.cr:28:7 in 'call'
+  from /usr/share/crystal/src/http/server/request_processor.cr:51:11 in 'process'
+  from /usr/share/crystal/src/http/server.cr:500:5 in '->'
+  from /usr/share/crystal/src/fiber.cr:146:11 in 'run'
+  from ???
+```
+</p>
+</details>
+GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
